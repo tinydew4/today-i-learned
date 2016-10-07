@@ -1,0 +1,11 @@
+{
+    "structure": {
+        "readme": "README.md",
+        "summary": "SUMMARY.md"
+    },
+    "title": "Today I learned",
+    "description": "개인 WIKI",
+    "language": "ko",
+    "direction": "ltr",
+    "gitbook": ">= 3.2.2"
+}
