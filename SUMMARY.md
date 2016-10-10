@@ -7,3 +7,6 @@
   * [중급](git/intermediate.md)
   * [고급](git/advanced.md)
   * [전문가](git/expert.md)
+* [GitHub 와 함께해요](github/README.md)
+  * [GitBook](github/gitbook.md)
+  * [GitPitch](github/gitpitch.md)
