@@ -52,7 +52,7 @@ git commit -m "Initial commit"
 
 ### 커밋 메세지 수정
 
-원격 저장소의 커밋 메세지를 수정하는 것은 **주의**해야한다.
+원격 저장소의 커밋 메세지를 수정하는 것은 **주의**해야합니다.
 
 ```bash
 git commit --amend
@@ -93,6 +93,15 @@ git branch -d [브랜치명]
 
 ```bash
 git branch [이전 브랜치명] [새 브랜치명]
+```
+
+## 로그
+
+다음 명령은 모든 브랜치에 대해 HEAD 기준 1 전 시점부터의 로그를 한줄로 요약해서
+그래프 형태로 보여줍니다.
+
+```bash
+git log --branches --graph --oneline HEAD~1..
 ```
 
 ## 원격 저장소
