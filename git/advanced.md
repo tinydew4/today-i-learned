@@ -49,6 +49,24 @@ git push [원격저장소] :[원격브랜치명]
 git push -f [원격저장소] [로컬브랜치명]
 ```
 
+## 히스토리 단장하기
+
+### 히스토리 변경 (커밋 변경)
+
+변경할 범위에는 `--root` 를 넣으면 모든 히스토리를 대상으로 합니다.
+
+```bash
+git rebase -i [대상 범위]
+```
+
+### 커밋 날짜를 작성일로 변경
+
+대상 범위를 생략하면 모든 커밋에 적용합니다.
+
+```bash
+git filter-branch --env-filter 'GIT_COMMITTER_DATE=$GIT_AUTHOR_DATE; export GIT_COMMITTER_DATE' [대상 범위]
+```
+
 ## 아직 사용하지 않은 명령어
 
 다음은 개념은 알고있으나 아직 사용해보지 않은 명령입니다.
@@ -60,7 +78,5 @@ git push -f [원격저장소] [로컬브랜치명]
 ```bash
 git stash
 ```
-
-### 히스토리 단장하기
 
 git-scm 의 [6.4 Git 도구 - 히스토리 단장하기](https://git-scm.com/book/ko/v1/Git-%EB%8F%84%EA%B5%AC-%ED%9E%88%EC%8A%A4%ED%86%A0%EB%A6%AC-%EB%8B%A8%EC%9E%A5%ED%95%98%EA%B8%B0)
